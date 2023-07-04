@@ -1,0 +1,15 @@
+{
+  "name": "Simple Todo List",
+  "version": "1.0",
+  "description": "A simple Chrome extension to manage todolist. You can create, add a simple list, mark for complate task, delete for un-use task ...",
+  "action": {
+    "default_popup": "./html/popup.html",
+    "default_icon": "./icon/icon.png"
+  },
+  "background": {
+    "service_worker": ["./js/background.js"],
+    "type": "module"
+  },
+  "permissions": ["storage", "bookmarks"],
+  "manifest_version": 3
+}
